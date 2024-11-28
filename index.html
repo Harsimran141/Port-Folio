@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white min-h-screen">
+    <div>
+        <!-- Navigation Bar -->
+        <nav class="flex justify-between items-center px-10 py-5 bg-gray-800 bg-opacity-80 shadow-md sticky top-0 z-50">
+            <h1 class="text-2xl font-bold">Harsimran's Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li class="hover:text-yellow-400 cursor-pointer transition-all">Home</li>
+                <li class="hover:text-yellow-400 cursor-pointer transition-all">About</li>
+                <li class="hover:text-yellow-400 cursor-pointer transition-all">Skills</li>
+                <li class="hover:text-yellow-400 cursor-pointer transition-all">Contact</li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="flex flex-col items-center justify-center text-center py-20 px-4">
+            <h1 class="text-5xl font-bold mb-6">Harsimran Boparai</h1>
+            <p class="text-lg max-w-3xl leading-relaxed">
+                Hello! My name is Harsimran, and I am a passionate web developer dedicated to creating functional and visually engaging websites. 
+                I thrive on solving challenges and turning innovative ideas into reality through code.
+            </p>
+        </div>
+
+        <!-- About Section -->
+        <div class="bg-white text-gray-800 py-16 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    With a strong foundation in HTML, CSS, JavaScript, and a growing expertise in modern web technologies, 
+                    I focus on delivering seamless user experiences and responsive designs. 
+                    I love exploring new tools and technologies, constantly learning to enhance my skills and stay updated in this ever-evolving field.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Beyond coding, I enjoy brainstorming creative solutions, staying curious about the latest trends in tech, 
+                    and finding inspiration in everyday experiences. My ultimate goal is to contribute meaningfully to the digital 
+                    landscape by crafting solutions that leave a positive impact.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="bg-gray-900 text-white py-10">
+                <h2 class="text-center text-3xl font-bold mb-6">My Skills</h2>
+                <div class="flex justify-center space-x-10">
+                    <!-- React -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-16 h-16 mb-2">
+                        <p>React</p>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="w-16 h-16 mb-2">
+                        <p>GitHub</p>
+                    </div>
+                    <!-- Tailwind -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2">
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="flex flex-col items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-16 h-16 mb-2">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <section id="contact" class="bg-gray-100 py-16 px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Contact Me</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        I’d love to hear from you! Whether it’s a project, a job opportunity, or just a chat, feel free to contact me using the form below.
+                    </p>
+                    <form action="https://formsubmit.co/your-email@example.com" method="POST" class="space-y-6">
+                        <div>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Your Name" 
+                                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Your Email" 
+                                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <textarea 
+                                name="message" 
+                                rows="4" 
+                                placeholder="Your Message" 
+                                class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            ></textarea>
+                        </div>
+                        <button 
+                            type="submit" 
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+</body>
+</html>
